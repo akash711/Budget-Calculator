@@ -7,25 +7,42 @@ class Wallet:
         self.balance = 0
     
     def deposit(self, amt: float):
+        
         if amt >= 0:
             self.balance = self.balance + amt
         else: 
             raise Exception('Amount cannot be negative!')
 
     def withdraw(self, amt: float):
+        
         if amt >= 0:
             self.balance = self.balance - amt
-        else: 
+        else:
             raise Exception('Amount cannot be negative!')
 
 
     def spend(self, amt: float, description: str):
-        pass
+        
+        if amt >= 0:
+            self.balance = self.balance - amt
+        else:
+            raise Exception('Amount cannot be negative!')
+        
+        
+        print("New transaction: {}, Amount: {}".format(description, amt))
+        
 
-    
+
     def get_balance(self):
-        pass
+        print('Available Balance: {}'.format(self.balance))
 
 
-    def check_funds(self):
-        pass
+    def send_money(self, amt, recepient):
+
+        if amt >= 0:
+            self.balance = self.balance - amt
+        else:
+            raise Exception('Amount cannot be negative!')
+        
+        print("{} sent to {}".format(amt, recepient))
+        
