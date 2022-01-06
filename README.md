@@ -1,4 +1,5 @@
-# Budget-Calculator
-Simple Python CLI budget calculator
+# Python CLI Wallet App 
 
-The app can take excel files as input and create insights about expenditure across different categories
+Simple Wallet application using Python OOP
+
+Takes .csv files as input and displays summary of transactions
