@@ -25,8 +25,8 @@ Type = ['W', 'D', 'T', 'S', 'R']
 Example:
 
 Type, Amount, Category, Description
-'D', 2000, Salary, ''
-'W', 500, '', ''
-'T', 100, '', 'Tom'
-'S', 50, 'Food', 'Burger'
-'S', 100, 'Clothing', 'Jeans'
+'D', 2000, Salary, '' <br>
+'W', 500, '', '' <br> 
+'T', 100, '', 'Tom' <br> 
+'S', 50, 'Food', 'Burger' <br> 
+'S', 100, 'Clothing', 'Jeans' <br>
