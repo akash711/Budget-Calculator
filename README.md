@@ -11,19 +11,20 @@ Columns : Type, Amount, Category, Description
 
 Type = ['W', 'D', 'T', 'S', 'R']
 
-W: Withdraw
-D: Deposit
-T: Transfer
-S: Spend/Swipe
-R: Receive
+-W: Withdraw
+-D: Deposit
+-T: Transfer
+-S: Spend/Swipe
+-R: Receive
 
 
-Log all transactions using the above format and store in root folder. 
+Log all transactions in the above format in a csv file and store in root folder. 
+
 Example:
 
 Type, Amount, Category, Description
-'D', 2000, Salary, '' \n
-'W', 500, '', '' \n
-'T', 100, '', 'Tom' \n
-'S', 50, 'Food', 'Burger' \n
-'S', 100, 'Clothing', 'Jeans' \n
+'D', 2000, Salary, ''
+'W', 500, '', ''
+'T', 100, '', 'Tom'
+'S', 50, 'Food', 'Burger'
+'S', 100, 'Clothing', 'Jeans'
