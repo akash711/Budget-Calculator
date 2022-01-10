@@ -43,3 +43,5 @@ $ python driver.py
 100 spent on Clothing: Jeans
 500 received from Harry
 ```
+
+![Output](/Figure_1.png)
