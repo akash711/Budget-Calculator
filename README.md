@@ -1,7 +1,10 @@
 # Python CLI Wallet App 
 Simple Wallet application using Python OOP
 
-1. Takes .csv files as input and displays summary of transactions
+1. Class `Wallet` can be used to create a simple wallet object (as shown in driver code).
+- Perform simple wallet operations such as tracking expenses (ledger), withdrawal/deposit money, transfer money etc.
+- Using the Wallet.read_from_csv() method, parse CSV files containing transaction information
+
 
 2. CSV file format:
 
