@@ -121,12 +121,19 @@ class Wallet:
         for i in range(len(data)):
             if data['Type'][i] == 'D':
                 self.deposit(amt = data['Amount'][i], category=data['Category'][i])
+            
             elif data['Type'][i] == 'T':
                 self.transfer(amt = data['Amount'][i], recepient=data['Description'][i])
+            
             elif data['Type'][i] == 'W':
                 self.withdraw(amt = data['Amount'][i])
+            
             elif data['Type'][i] == 'S':
                 self.spend(amt = data['Amount'][i], category=data['Category'][i], description=data['Description'][i])
+            
+            elif data['Type'][i] == 'R':
+                self.receive(amt = data['Amount'][i], sender=data['Description'][i])
+
             else:
                 raise Exception('Invalid Transaction Type!')
             
@@ -139,10 +146,27 @@ class Wallet:
 
     def plot_categories(self):
         
-        plt.figure()
-        plt.bar(self.categories.keys(), self.categories.values())
+        inc = ([], [])
+        exp = ([], [])
+        for i in self.categories.keys():
+            if self.categories[i] > 0:
+                inc[0].append(self.categories[i])
+                inc[1].append(i) 
+            
+            else:
+                exp[0].append(abs(self.categories[i]))
+                exp[1].append(i) 
+
+        plt.subplot(1, 2, 1)
+        plt.title('Income')
+        plt.pie(labels = inc[1], x = inc[0])
+        plt.subplot(1, 2, 2)
+        plt.title('Expenditure')
+        plt.pie(labels = exp[1], x = exp[0])
+
         plt.show()
-        
+
+
     def __repr__(self):
         return "Wallet({})".format(self.name)
 
