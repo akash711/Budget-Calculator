@@ -30,3 +30,18 @@ Type, Amount, Category, Description <br>
 'T', 100, '', 'Tom' <br> 
 'S', 50, 'Food', 'Burger' <br> 
 'S', 100, 'Clothing', 'Jeans' <br>
+
+
+Sample Output: <br>
+$ python driver.py
+
+```Wallet: 'Sample' created!
+2000 deposited
+500 withdrawn
+100 transferred to Tom
+50 spent on Food: Burger
+100 spent on Clothing: Jeans
+500 received from Harry
+```
+
+![Output](/Figure_1.png)
