@@ -1,4 +1,5 @@
 import pandas as pd
+import matplotlib.pyplot as plt
 
 class Wallet:
     
@@ -136,7 +137,12 @@ class Wallet:
             print(i)
 
 
-
+    def plot_categories(self):
+        
+        plt.figure()
+        plt.bar(self.categories.keys(), self.categories.values())
+        plt.show()
+        
     def __repr__(self):
         return "Wallet({})".format(self.name)
 
