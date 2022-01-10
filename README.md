@@ -22,8 +22,8 @@ Log all transactions using the above format and store in root folder.
 Example:
 
 Type, Amount, Category, Description
-'D', 2000, Salary, ''
-'W', 500, '', ''
-'T', 100, '', 'Tom'
-'S', 50, 'Food', 'Burger'
-'S', 100, 'Clothing', 'Jeans'
+'D', 2000, Salary, '' \n
+'W', 500, '', '' \n
+'T', 100, '', 'Tom' \n
+'S', 50, 'Food', 'Burger' \n
+'S', 100, 'Clothing', 'Jeans' \n
