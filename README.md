@@ -1,10 +1,9 @@
 # Python CLI Wallet App 
-
 Simple Wallet application using Python OOP
 
-Takes .csv files as input and displays summary of transactions
+1. Takes .csv files as input and displays summary of transactions
 
-CSV file format:
+2. CSV file format:
 
 Columns : Type, Amount, Category, Description
 
@@ -18,7 +17,7 @@ Type = ['W', 'D', 'T', 'S', 'R']
 -R: Receive
 
 
-Log all transactions in the above format in a csv file and store in root folder. 
+3. Log all transactions in the above format in a csv file and store in root folder. 
 
 Example:
 
